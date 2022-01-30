@@ -1,17 +1,25 @@
 $(document).ready(function() {
   $("form#survey").submit(function(event) {
-    event.preventDefault();
     const dates = $("select#dates").val();
     const cuisine = $("select#cuisine").val();
     const pets = $("select#pets").val();
+    event.preventDefault();
+    
 
 
-    if (dates === 'movies', 'bowling', 'dinner'  && cuisine === 'italian' && pets === 'dogs', 'cats') {
+    if (dates === 'movie') {
       $("#ruby").show();
-    } else if (dates === 'movies', 'bowling', 'dinner' && cuisine === 'thai' && pets === 'dogs', 'cats') {
+      $("#javascript").hide();
+      $("#rust").hide();
+    } else if (cuisine === 'thai') {
+      $("#ruby").hide();
       $("#javascript").show();
-    } else if (dates === 'movies', 'bowling', 'dinner' && cuisine === 'mexican' && pets === 'dogs', 'cats') {
+      $("#rust").hide();
+    } else (pets === dogs) {
+      $("#ruby").hide();
+      $("#javascript").hide();
       $("#rust").show();
+      
     }
   });
 });

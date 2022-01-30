@@ -9,12 +9,13 @@
 </head>
 <body>
   <div class="container">
-    <h1>What Programming language suits you?</h1>
-    <h2>Info about you</h2>
+    <h1>Fill out this questionaire to find what Programming language suits you!</h1>
+    
 
-    <p>let's learn more about you!</p>
+    <h3><em><strong>let's learn more about you!</em></strong></h3>
 
     <form id="survey">
+      <div>
       <label for="dates"> What kind of date do your prefer?</label>
         <select id="dates">
           <option value="dinner">Dinner Date</option>
@@ -22,6 +23,7 @@
           <option value="movie">Movie date</option>
         </select>
       </div>
+      <div>
       <label for="cuisine"> What is your favorite cuisine?</label>
         <select id="cuisine">
           <option value="italian">Italian</option>
@@ -29,6 +31,7 @@
           <option value="mexican">Mexican</option>
         </select>
       </div>
+      <div>
       <label for="pets"> Are you a dog or cat person?</label>
         <select id="pets">
           <option value="dog">Man's best friend all the way!</option>
@@ -49,7 +52,6 @@
       <button type="submit" class="btn"> Find my language! </button>
     </form>
 
-    <div class="container">
       <div id="rust" class="hidden">
         <h2>Rust:</h2>
         <p> Try out Rust for yourself! A great general-purpose programming langauge that focuses on performance and safety!
@@ -62,7 +64,6 @@
         <h2>Ruby:</h2>
         <p> You should try Ruby! An open source programming language that is great for desktop applications, processing services, and websites.
       </div>
-    </div>
   </div>
 </body>
 </html>
