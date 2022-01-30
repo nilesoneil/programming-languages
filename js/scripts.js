@@ -1,25 +1,30 @@
-$(document).ready(function() {
+$(document).ready(function(event) {
   $("form#survey").submit(function(event) {
-    const dates = $("select#dates").val();
-    const cuisine = $("select#cuisine").val();
-    const pets = $("select#pets").val();
-    event.preventDefault();
+    const dates = $("#dates").val();
+    const cuisine = $("#cuisine").val();
+    const pets = $("#pets").val();
+    
+    
     
 
 
-    if (dates === 'movie') {
+    if (dates === "dinner" || cuisine === "thai") {
       $("#ruby").show();
       $("#javascript").hide();
       $("#rust").hide();
-    } else if (cuisine === 'thai') {
+    } else if (dates === "bowling" || cuisine === "italian") {
       $("#ruby").hide();
       $("#javascript").show();
       $("#rust").hide();
-    } else (pets === dogs) {
+    } else if (dates === "movie" || cuisine === "mexican") {
       $("#ruby").hide();
       $("#javascript").hide();
       $("#rust").show();
-      
+    } else {
+      $("#ruby").hide();
+      $("#javascript").hide();
+      $("#rust").show();
     }
+    event.preventDefault();
   });
 });
