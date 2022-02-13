@@ -16,11 +16,7 @@ $(document).ready(function(event) {
       $("#ruby").hide();
       $("#javascript").show();
       $("#rust").hide();
-    } else if (dates === "movie" || cuisine === "mexican" && season === "winter") {
-      $("#ruby").hide();
-      $("#javascript").hide();
-      $("#rust").show();
-    } else if (gender === "female" && season === "winter") {
+    } else if (dates === "movie" || cuisine === "mexican" || season === "winter") {
       $("#ruby").hide();
       $("#javascript").hide();
       $("#rust").show();
