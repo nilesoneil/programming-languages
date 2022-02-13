@@ -11,11 +11,9 @@
   <div class="container">
     <h1>Fill out this questionaire to find what Programming language suits you!</h1>
     
-
     <h3><em><strong>let's learn more about you!</em></strong></h3>
-
+    <div>
     <form id="survey">
-      <div>
       <label for="dates"> What kind of date do your prefer?</label>
         <select id="dates">
           <option value="dinner">Dinner Date</option>
@@ -38,10 +36,6 @@
           <option value="cat">Cat's are the creatures I love!</option>
         </select>
       </div>
-      <div class="form-group">
-        <label for="dob"> When is your birthday?</label>
-        <input id="dob" class="form-control" type="date">
-      </div>
       <div> 
       <label for="gender">Gender</label>
       <select id="gender">
@@ -49,6 +43,13 @@
         <option value="male">Male</option>
       </select>
       </div>
+      <div> 
+        <label for="season">Season</label>
+        <select id="season">
+          <option value="summer">Summer</option>
+          <option value="winter">Winter</option>
+        </select>
+        </div>
       <button type="submit" class="btn"> Find my language! </button>
     </form>
 
@@ -57,7 +58,7 @@
         <p> Try out Rust for yourself! A great general-purpose programming langauge that focuses on performance and safety!
       </div>
       <div id="javascript" class="hidden">
-        <h2>Javascript"</h2>
+        <h2>Javascript</h2>
         <p> Javascript is the way to go! Most commonly used for creating web pages this programming language has flexiblity and accessability aplenty!
       </div>
       <div id="ruby" class="hidden">
